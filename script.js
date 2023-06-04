@@ -12,7 +12,8 @@ inputField.addEventListener("keypress", function(event) {
 
 function onclickfunction(){
   let userGuess = document.getElementById('inputField').value;
-  let responeText = document.getElementById('responseText')
+  let responseText = document.getElementById('responseText')
+  let link = document.getElementById('link');
   
   //Clears the previous guess
   input.value = "";
@@ -20,17 +21,17 @@ function onclickfunction(){
   if (userGuess.toUpperCase() == "093640263"){
     document.getElementById('inputField').style.outline='2px solid #4efda6'
     document.getElementById('btn').style.background='#4efda6';
-    responeText.innerText = "Correct, Search E2 and Change the O's to 0's";
+    responseText.innerHTML = "Claim your second ticket role using <a href='#'>this message</a> and then check the channel list once again";
   }
   else if (userGuess.toUpperCase() == "33"){
     document.getElementById('inputField').style.outline='2px solid #fd4e4e'
     document.getElementById('btn').style.background='#fd4e4e';
-    responeText.innerText = "Maybe undo a step and try again";
+    responseText.innerText = "Maybe focus on how many digits are required for this code.";
   }
   else if (userGuess.toUpperCase() == "OVERBOARD"){
-    document.getElementById('inputField').style.outline='2px solid #fd4e4e'
-    document.getElementById('btn').style.background='#fd4e4e';
-    responeText.innerText = "Close, now check what's lurking below";
+    document.getElementById('inputField').style.outline='2px solid #fdf14e'
+    document.getElementById('btn').style.background='#fdf14e';
+    responseText.innerHTML = "Claim your first ticket role using <a href='#'>this message</a> and then check the channel list";
   }
   else {
     document.getElementById('inputField').style.outline='2px solid #fd4e4e'
