@@ -28,14 +28,18 @@ function onclickfunction(){
     responseText.innerText = "Maybe focus on how many digits are required for this code.";
   }
   else if (userGuess.toUpperCase() == "OVERBOARD"){
-    document.getElementById('inputField').style.outline='2px solid #fdf14e'
+    document.getElementById('inputField').style.outline='2px solid #fdf14e';
     document.getElementById('btn').style.background='#fdf14e';
     responseText.innerHTML = "Claim your first ticket role using <a href='#'>this message</a> and then check the channel list";
+  }
+  else if (userGuess.toUpperCase() == "H0RNSW0GGLE"){
+    document.getElementById('inputField').style.outline='2px solid #7f8ff4';
+    document.getElementById('btn').style.background='#7f8ff4';
+    responseText.innerHTML = "Congratulations! Claim your final ticket role using <a href='#'>this message</a>";
   }
   else {
     document.getElementById('inputField').style.outline='2px solid #fd4e4e'
     document.getElementById('btn').style.background='#fd4e4e';
     responseText.innerText = "Incorrect, Please Try Again";
   }
-
 }
