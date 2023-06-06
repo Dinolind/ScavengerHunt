@@ -1,6 +1,13 @@
+body {
+  background-image: url(Treasure\ Chest.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 :root {
   background: #f5f6fa;
-  color: #adadad;
+  color: #8d8d8d;
   font: 1rem "PT Sans", sans-serif;
 }
 
@@ -56,7 +63,7 @@ a:hover {
 .form__field {
   width: 360px;
   background: #fff;
-  color: #a3a3a3;
+  color: #8d8d8d;
   font: inherit;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   border: 0;
@@ -67,5 +74,30 @@ a:hover {
 
 h1, h3 {
   text-align: center;
-  line-height: 20px;
+  line-height: auto;
+}
+
+@media (max-width: 452px) {
+  .btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form__field{
+    display: block;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 365px) {
+
+  .form__field{
+    display: block;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
