@@ -30,7 +30,7 @@ function onclickfunction(){
   else if (userGuess.toUpperCase() == "H0RNSW0GGLE"){
     document.getElementById('inputField').style.outline='2px solid #7f8ff4';
     document.getElementById('btn').style.background='#7f8ff4';
-    responseText.innerHTML = "Congratulations! Claim your final ticket role using <a href='https://discordapp.com/channels/1066815802621317171/1076247721314369606/1094118766570381322'>this message</a>";
+    responseText.innerHTML = "Congratulations! Claim your final ticket role using <a href='https://discordapp.com/channels/1066815802621317171/1076247721314369606/1093226507633176627'>this message</a>";
   }
   else if (userGuess.toUpperCase() == "33"){
     document.getElementById('inputField').style.outline='2px solid #fd4e4e'
